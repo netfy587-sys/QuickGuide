@@ -1,0 +1,197 @@
+<!-- 
+  HALL OF RARE GREEN — Extraordinary & Record-Breaking Plants (Museum Exhibit Style)
+  Paste this entire block into an Elementor "HTML" widget (or a Custom HTML section).
+  Layout: dark "museum exhibit" plaques with large record callouts, alternating sides —
+  a new topic (rare/extreme plants, not care or biology basics) and a new dark 
+  color scheme versus the previous four plant pages.
+  Photos below use Lorem Picsum (free-to-use placeholders) — swap the <img src="..."> 
+  links with your own photography before publishing.
+-->
+<style>
+  .hrg-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #eae6da;
+    background: #14180f;
+    line-height: 1.75;
+  }
+  .hrg-hero {
+    text-align: center;
+    padding: 70px 0 30px;
+  }
+  .hrg-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #c9a24a;
+    margin-bottom: 16px;
+  }
+  .hrg-hero h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0 0 16px;
+    color: #f5f1e6;
+    letter-spacing: -0.5px;
+  }
+  .hrg-hero p {
+    font-size: 15px;
+    color: #a6a08e;
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  .hrg-hero-img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-top: 30px;
+    filter: brightness(0.8) saturate(1.1);
+  }
+
+  /* Exhibit plaques */
+  .hrg-exhibits {
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .hrg-plaque {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: 1px solid #33392a;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #1c2116;
+  }
+  .hrg-plaque.hrg-reverse { direction: rtl; }
+  .hrg-plaque.hrg-reverse > * { direction: ltr; }
+  .hrg-plaque img {
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    object-fit: cover;
+  }
+  .hrg-plaque-body {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hrg-record {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #c9a24a;
+    margin-bottom: 10px;
+  }
+  .hrg-plaque-body h2 {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 0 6px;
+    color: #f5f1e6;
+  }
+  .hrg-plaque-body .hrg-latin {
+    font-style: italic;
+    font-size: 12px;
+    color: #7d7864;
+    margin-bottom: 16px;
+  }
+  .hrg-big-stat {
+    font-size: 30px;
+    font-weight: 800;
+    color: #c9a24a;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  .hrg-plaque-body p {
+    font-size: 14.5px;
+    color: #c3bfae;
+    margin: 0;
+  }
+
+  .hrg-footer-note {
+    font-size: 12px;
+    color: #6f6a58;
+    text-align: center;
+    padding: 40px 0 60px;
+    border-top: 1px solid #33392a;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 760px) {
+    .hrg-plaque, .hrg-plaque.hrg-reverse { grid-template-columns: 1fr; direction: ltr; }
+    .hrg-plaque img { min-height: 200px; }
+    .hrg-hero h1 { font-size: 28px; }
+    .hrg-plaque-body { padding: 22px; }
+  }
+</style>
+
+<div class="hrg-wrap">
+
+  <!-- HERO -->
+  <div class="hrg-hero">
+    <div class="hrg-eyebrow">Hall of Rare Green</div>
+    <h1>Plants That Bend the Rules of What Plants Are Supposed to Do</h1>
+    <p>A small exhibit of botanical extremes — the oldest, the largest, the strangest survivors in the plant world, and what makes each one genuinely unusual.</p>
+    <img class="hrg-hero-img" src="https://picsum.photos/id/1080/1100/650" alt="An unusual, dramatic-looking plant in low light">
+  </div>
+
+  <!-- EXHIBITS -->
+  <div class="hrg-exhibits">
+
+    <div class="hrg-plaque">
+      <img src="https://picsum.photos/id/152/700/700" alt="A gnarled, ancient-looking tree">
+      <div class="hrg-plaque-body">
+        <div class="hrg-record">Oldest Known Individual</div>
+        <h2>Bristlecone Pine</h2>
+        <div class="hrg-latin">Pinus longaeva</div>
+        <div class="hrg-big-stat">Over 4,800 years old</div>
+        <p>Growing slowly in harsh, high-altitude conditions across the western United States, some individual bristlecone pines were already centuries old when the pyramids of Giza were being built — and are, remarkably, still alive today.</p>
+      </div>
+    </div>
+
+    <div class="hrg-plaque hrg-reverse">
+      <img src="https://picsum.photos/id/106/700/700" alt="A very large, unusual flower">
+      <div class="hrg-plaque-body">
+        <div class="hrg-record">Largest Individual Flower</div>
+        <h2>Rafflesia</h2>
+        <div class="hrg-latin">Rafflesia arnoldii</div>
+        <div class="hrg-big-stat">Up to 1 metre wide</div>
+        <p>Found in the rainforests of Southeast Asia, this parasitic plant produces the largest single flower on Earth — and is infamous for a smell often compared to rotting meat, an adaptation that attracts the flies it relies on for pollination.</p>
+      </div>
+    </div>
+
+    <div class="hrg-plaque">
+      <img src="https://picsum.photos/id/431/700/700" alt="A dry, desert plant close-up">
+      <div class="hrg-plaque-body">
+        <div class="hrg-record">Extreme Drought Survival</div>
+        <h2>Resurrection Plant</h2>
+        <div class="hrg-latin">Selaginella lepidophylla</div>
+        <div class="hrg-big-stat">Survives years without water</div>
+        <p>This small desert plant can lose nearly all of its internal water, curl into a dry, seemingly dead ball, and remain dormant for years — only to unfurl and turn green again within hours of finally receiving rain.</p>
+      </div>
+    </div>
+
+    <div class="hrg-plaque hrg-reverse">
+      <img src="https://picsum.photos/id/292/700/700" alt="A strange desert plant with two long leaves">
+      <div class="hrg-plaque-body">
+        <div class="hrg-record">Longest-Living Leaves</div>
+        <h2>Welwitschia</h2>
+        <div class="hrg-latin">Welwitschia mirabilis</div>
+        <div class="hrg-big-stat">Just two leaves, for centuries</div>
+        <p>Native to the Namib Desert, this plant grows exactly two leaves in its entire lifetime — the same two, slowly splitting and fraying over the decades, in some individuals for well over a thousand years.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="hrg-footer-note">
+    A small collection of the plant world's strangest, oldest, and most extreme survivors.
+  </div>
+
+</div>
