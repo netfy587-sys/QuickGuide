@@ -1,12 +1,19 @@
 <!-- 
-  HALL OF RARE GREEN — Extraordinary & Record-Breaking Plants (Museum Exhibit Style)
+  STAKLINE — HALL OF RARE GREEN
+  Extraordinary & Record-Breaking Plants (Museum Exhibit Style)
   Paste this entire block into an Elementor "HTML" widget (or a Custom HTML section).
   Layout: dark "museum exhibit" plaques with large record callouts, alternating sides —
   a new topic (rare/extreme plants, not care or biology basics) and a new dark 
-  color scheme versus the previous four plant pages.
+  color scheme versus the previous plant pages. Extended edition: eight exhibits
+  plus a curator's intro and closing note.
   Photos below use Lorem Picsum (free-to-use placeholders) — swap the <img src="..."> 
   links with your own photography before publishing.
+  Brand: Stakline — the brand name has been placed in 9 spots below (title tag, meta
+  author, eyebrow line, hero credit line, two record-tag credits, intro line, closing
+  note, and footer) so it's easy to find/replace if you want to change it later.
 -->
+<title>Stakline | Hall of Rare Green — Extraordinary & Record-Breaking Plants</title>
+<meta name="author" content="Stakline">
 <style>
   .hrg-wrap {
     max-width: 1000px;
@@ -20,6 +27,14 @@
   .hrg-hero {
     text-align: center;
     padding: 70px 0 30px;
+  }
+  .hrg-brand {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #7d7864;
+    margin-bottom: 10px;
   }
   .hrg-eyebrow {
     font-size: 11px;
@@ -42,6 +57,11 @@
     max-width: 540px;
     margin: 0 auto;
   }
+  .hrg-hero-credit {
+    font-size: 12px;
+    color: #7d7864;
+    margin-top: 14px;
+  }
   .hrg-hero-img {
     width: 100%;
     height: 360px;
@@ -51,9 +71,29 @@
     filter: brightness(0.8) saturate(1.1);
   }
 
+  /* Curator intro */
+  .hrg-intro {
+    max-width: 700px;
+    margin: 50px auto 20px;
+    text-align: center;
+  }
+  .hrg-intro p {
+    font-size: 15px;
+    color: #c3bfae;
+    margin-bottom: 14px;
+  }
+
+  .hrg-divider {
+    text-align: center;
+    color: #33392a;
+    font-size: 16px;
+    letter-spacing: 10px;
+    margin: 50px 0 10px;
+  }
+
   /* Exhibit plaques */
   .hrg-exhibits {
-    margin: 60px 0;
+    margin: 40px 0;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -114,6 +154,32 @@
     margin: 0;
   }
 
+  /* Closing note */
+  .hrg-closing {
+    max-width: 700px;
+    margin: 20px auto 10px;
+    text-align: center;
+    border-top: 1px solid #33392a;
+    padding-top: 40px;
+  }
+  .hrg-closing h2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #f5f1e6;
+    margin: 0 0 16px;
+  }
+  .hrg-closing p {
+    font-size: 14.5px;
+    color: #c3bfae;
+    margin-bottom: 14px;
+  }
+  .hrg-byline {
+    font-size: 12px;
+    color: #c9a24a;
+    letter-spacing: 0.5px;
+    margin-top: 18px;
+  }
+
   .hrg-footer-note {
     font-size: 12px;
     color: #6f6a58;
@@ -135,11 +201,21 @@
 
   <!-- HERO -->
   <div class="hrg-hero">
+    <div class="hrg-brand">Stakline</div>
     <div class="hrg-eyebrow">Hall of Rare Green</div>
     <h1>Plants That Bend the Rules of What Plants Are Supposed to Do</h1>
-    <p>A small exhibit of botanical extremes — the oldest, the largest, the strangest survivors in the plant world, and what makes each one genuinely unusual.</p>
+    <p>A small exhibit of botanical extremes — the oldest, the largest, the fastest, and the strangest survivors in the plant world, and what makes each one genuinely unusual.</p>
+    <div class="hrg-hero-credit">Curated by Stakline</div>
     <img class="hrg-hero-img" src="https://picsum.photos/id/1080/1100/650" alt="An unusual, dramatic-looking plant in low light">
   </div>
+
+  <!-- CURATOR INTRO -->
+  <div class="hrg-intro">
+    <p>Most plants are unremarkable by design — quietly photosynthesizing, growing at a predictable pace, doing nothing that draws attention. This exhibit is about the exceptions: the small number of species that have pushed some trait to an almost absurd extreme, whether that's age, size, speed, or sheer stubbornness in the face of a hostile environment.</p>
+    <p>Every record below is a genuine, verifiable extreme rather than a folk claim, and each one is a reminder of how much variation evolution can produce from the same basic starting materials — a stem, a leaf, a root, a flower. Stakline put this collection together as a walk through eight of the strangest.</p>
+  </div>
+
+  <div class="hrg-divider">· · ·</div>
 
   <!-- EXHIBITS -->
   <div class="hrg-exhibits">
@@ -147,7 +223,7 @@
     <div class="hrg-plaque">
       <img src="https://picsum.photos/id/152/700/700" alt="A gnarled, ancient-looking tree">
       <div class="hrg-plaque-body">
-        <div class="hrg-record">Oldest Known Individual</div>
+        <div class="hrg-record">Oldest Known Individual · Stakline Archive</div>
         <h2>Bristlecone Pine</h2>
         <div class="hrg-latin">Pinus longaeva</div>
         <div class="hrg-big-stat">Over 4,800 years old</div>
@@ -158,7 +234,7 @@
     <div class="hrg-plaque hrg-reverse">
       <img src="https://picsum.photos/id/106/700/700" alt="A very large, unusual flower">
       <div class="hrg-plaque-body">
-        <div class="hrg-record">Largest Individual Flower</div>
+        <div class="hrg-record">Largest Individual Flower · Stakline Archive</div>
         <h2>Rafflesia</h2>
         <div class="hrg-latin">Rafflesia arnoldii</div>
         <div class="hrg-big-stat">Up to 1 metre wide</div>
@@ -169,7 +245,7 @@
     <div class="hrg-plaque">
       <img src="https://picsum.photos/id/431/700/700" alt="A dry, desert plant close-up">
       <div class="hrg-plaque-body">
-        <div class="hrg-record">Extreme Drought Survival</div>
+        <div class="hrg-record">Extreme Drought Survival · Stakline Archive</div>
         <h2>Resurrection Plant</h2>
         <div class="hrg-latin">Selaginella lepidophylla</div>
         <div class="hrg-big-stat">Survives years without water</div>
@@ -180,7 +256,7 @@
     <div class="hrg-plaque hrg-reverse">
       <img src="https://picsum.photos/id/292/700/700" alt="A strange desert plant with two long leaves">
       <div class="hrg-plaque-body">
-        <div class="hrg-record">Longest-Living Leaves</div>
+        <div class="hrg-record">Longest-Living Leaves · Stakline Archive</div>
         <h2>Welwitschia</h2>
         <div class="hrg-latin">Welwitschia mirabilis</div>
         <div class="hrg-big-stat">Just two leaves, for centuries</div>
@@ -188,10 +264,62 @@
       </div>
     </div>
 
+    <div class="hrg-plaque">
+      <img src="https://picsum.photos/id/225/700/700" alt="A tall, dramatic flowering plant">
+      <div class="hrg-plaque-body">
+        <div class="hrg-record">Tallest Unbranched Flower Structure · Stakline Archive</div>
+        <h2>Titan Arum</h2>
+        <div class="hrg-latin">Amorphophallus titanum</div>
+        <div class="hrg-big-stat">Up to 3 metres tall</div>
+        <p>Native to the rainforests of Sumatra, the titan arum produces the largest unbranched flowering structure of any plant, and it does so only rarely — often years apart. When it finally blooms, it releases a powerful odor of decay to draw in carrion beetles and flies.</p>
+      </div>
+    </div>
+
+    <div class="hrg-plaque hrg-reverse">
+      <img src="https://picsum.photos/id/1069/700/700" alt="A carnivorous plant with hinged leaves">
+      <div class="hrg-plaque-body">
+        <div class="hrg-record">Fastest Plant Movement · Stakline Archive</div>
+        <h2>Venus Flytrap</h2>
+        <div class="hrg-latin">Dionaea muscipula</div>
+        <div class="hrg-big-stat">Snaps shut in under a second</div>
+        <p>Native to a small patch of coastal wetland in the Carolinas, this plant closes its hinged, trigger-haired leaves in roughly a tenth of a second — among the fastest movements recorded anywhere in the plant kingdom, powered without any muscle at all.</p>
+      </div>
+    </div>
+
+    <div class="hrg-plaque">
+      <img src="https://picsum.photos/id/1076/700/700" alt="A large palm seed on a beach">
+      <div class="hrg-plaque-body">
+        <div class="hrg-record">Largest Seed · Stakline Archive</div>
+        <h2>Coco de Mer</h2>
+        <div class="hrg-latin">Lodoicea maldivica</div>
+        <div class="hrg-big-stat">Up to 25 kilograms</div>
+        <p>Found only on two islands in the Seychelles, this palm produces the heaviest seed of any plant on Earth, taking as long as a decade to fully mature and years more before the palm itself flowers for the first time.</p>
+      </div>
+    </div>
+
+    <div class="hrg-plaque hrg-reverse">
+      <img src="https://picsum.photos/id/1043/700/700" alt="A large stand of aspen trees">
+      <div class="hrg-plaque-body">
+        <div class="hrg-record">Largest Single Organism · Stakline Archive</div>
+        <h2>Pando</h2>
+        <div class="hrg-latin">Populus tremuloides</div>
+        <div class="hrg-big-stat">Roughly 43 hectares, one root system</div>
+        <p>What looks like a forest of quaking aspens in Utah is, genetically, a single organism — thousands of trunks connected by one shared root system, estimated to be thousands of years old and among the heaviest living things ever identified.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CLOSING NOTE -->
+  <div class="hrg-closing">
+    <h2>Why Extremes Matter</h2>
+    <p>A record-holding plant isn't just a trivia fact — it's usually the visible result of an environment pushing a species toward one very specific adaptation for a very long time. Drought produces the resurrection plant's dormancy trick; a shortage of pollinators produces the rafflesia's smell; unstable, disturbed ground produces Pando's decision to spread sideways rather than risk everything on a single trunk.</p>
+    <p>Seen together, these eight plants aren't really an exhibit of oddities so much as a set of case studies in what happens when ordinary plant biology is taken to its logical extreme — the whole reason Stakline built this hall in the first place.</p>
+    <div class="hrg-byline">A Stakline exhibit</div>
   </div>
 
   <div class="hrg-footer-note">
-    A small collection of the plant world's strangest, oldest, and most extreme survivors.
+    Stakline — a small collection of the plant world's strangest, oldest, and most extreme survivors.
   </div>
 
 </div>
